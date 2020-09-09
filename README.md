@@ -16,5 +16,5 @@ Create K8s cluster using KIND configuration file
 For a sample kind configuration file see [kind-example-config](https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml). To specify a configuration file when creating a cluster, use the --config flag:
 
 ```bash
-kind create cluster --config kind-example-config.yaml
+$ kind create cluster --config kind-example-config.yaml
 ```
