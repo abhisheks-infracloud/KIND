@@ -13,8 +13,9 @@ By default, the cluster will be given the name kind. Use the --name flag to assi
 If you want the create cluster command to block until the control plane reaches a ready status, you can use the --wait flag and specify a timeout. To use --wait you must specify the units of the time to wait. For example, to wait for 30 seconds, do --wait 30s, for 5 minutes do --wait 5m, etc.
 
 Create K8s cluster using KIND configuration file
-For a sample kind configuration file see [kind-example-config](https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml). To specify a configuration file when creating a cluster, use the --config flag:
+For a sample kind configuration file see [kind-example-config](https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml). 
 
+Create a K8s cluster with 1 master and 2 worker nodes:
 ```bash
-$ kind create cluster --config kind-example-config.yaml
+$ kind create cluster --config kind-config.yaml
 ```
